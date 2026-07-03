@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title> Archive | Collab</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="index.html" class="logo">
+            MUSIC ARCHIVE
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalogo.html?onTour=true">Tours</a>
+            <a href="catalogo.html?onAlbum=true">Albums</a>
+            <a href="form.html">Collab <div id="heart">&lt;3</div></a>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="catalog-hero">
+
+            <p class="detail-kicker">Community Archive</p>
+
+            <h1>
+                Collab with<br>
+                the Archive <div id="heart">&lt;3</div>
+            </h1>
+
+            <p class="form-subtitle">
+                Add your favourite projects and help expand the archive.
+            </p>
+
+        </section>
+
+        <section class="form-section">
+
+            <form class="archive-form" id="projectForm">
+
+                <div class="form-group">
+                    <label>Project Title</label>
+                    <input type="text" id="inputTitle" name="title">
+                    <span id="titleError" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Artist Name</label>
+                    <input type="text" id="inputArtist" name="artist">
+                    <span id="artistError" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Type</label>
+                    <select id="inputType" name="type">
+                        <option>Album</option>
+                        <option>EP</option>
+                        <option>Single</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Status</label>
+                    <select id="inputStatus" name="status">
+                        <option>Released</option>
+                        <option>Coming Soon</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nº of tracks</label>
+                    <input type="number" id="inputTracks"
+                        placeholder="Keep in mind: single (1song), EP (up to 6 songs), album(6 or more)">
+                    <span id="tracksError" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Release Date</label>
+                    <input type="date" id="inputDate" name="date">
+                    <span id="dateError" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Project Cover</label>
+                    <input type="file" id="inputCover" accept="image/*">
+                    <small>your file must be under 2mb</small>
+                    <span id="coverError" class="error-msg"></span>
+                </div>
+
+                <div class="form-group">
+                    <label>Genre</label>
+                    <input type="text" id="inputGenre" placeholder="pop, electronic, experimental...">
+                    <span id="genreError" class="error-msg"></span>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Project</button>
+
+                <p id="successMsg" class="form-success"></p>
+
+            </form>
+
+
+
+
+            <div class="">
+
+                <div class="added-projects">
+                    <h2 class="section-title">Projects you added</h2>
+                    <p class="form-subtitle">waiting to be approved</p>
+                    <div id="addedList"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        Music Archive © 2026
+    </footer>
+    <script src="datos.js"></script>
+    <script src="Form.js"></script>
+</body>
+
+</html>

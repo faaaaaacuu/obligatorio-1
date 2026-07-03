@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title> Archive | Catalog</title>
+</head>
+
+<body>
+    <header>
+
+        <a href="index.html" class="logo">
+            MUSIC ARCHIVE
+        </a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="catalogo.html?onTour=true">Tours</a>
+            <a href="catalogo.html?onAlbum=true">Albums</a>
+            <a href="form.html">Collab <div id="heart">&lt;3</div></a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="catalog-hero">
+
+            <p class="detail-kicker">Archive Catalog</p>
+
+            <h1>
+                Browse<br>
+                Projects
+            </h1>
+
+        </section>
+
+        <section class="catalog-layout">
+
+            <aside class="catalog-filters">
+                <div id="aside-fixed">
+                    <div class="filter-header">
+                        <h2 class="section-title">Filters</h2>
+                        <a id="clear-btn">Clear</a>
+                    </div>
+
+                    <form>
+
+                        <div class="filter-group">
+                            <label for="searchbar">Search</label>
+                            <input type="text" id="searchbar" placeholder="Search projects...">
+                        </div>
+
+
+                        <div class="filter-group">
+                            <label for="artist-filter">Artist</label>
+                            <select id="artist-filter" name="artist">
+                                <option value="">All artists</option>
+
+                            </select>
+                        </div>
+
+                        <div class="filter-group">
+                            <label for="country-filter">Country</label>
+                            <select id="country-filter" name="country">
+                                <option value="">All countries</option>
+
+                            </select>
+                        </div>
+
+                        <!--     <div class="filter-group">
+                        <label for="genre-filter">genere</label>
+                        <select id="genre-filter" name="genre">
+                            <option value="">All genres</option>
+                        </select>
+                    </div> -->
+                        <div class="filter-group">
+                            <label for="type-filter">type</label>
+                            <select id="type-filter" name="type">
+                                <option value="">All types</option>
+
+                            </select>
+                        </div>
+
+
+                        <!-- en otra oportunidad los pondré :/ -->
+                         
+                       <!--  <div class="filter-group">
+                            <span class="filter-label">Tags</span>
+
+                            <div class="filter-tags">
+                                <a href="#">experimental</a>
+                                <a href="#">dance</a>
+                                <a href="#">electrónica</a>
+                                <a href="#">nostalgia</a>
+                                <a href="#">internet</a>
+                            </div>
+                        </div> -->
+
+
+                        <label class="filter-check">
+                            <input type="checkbox" name="tour" id="tour">
+                            <span>On tour only</span>
+                        </label>
+                </div>
+                </form>
+
+            </aside>
+
+            <section class="catalog-results">
+
+                <div class="results-header">
+                    <h2 class="section-title">Results</h2>
+                    <p><span></span> projects</p>
+                </div>
+
+                <div class="catalog-grid">
+
+                    <!--    <article href="detalle.html" class="catalog-card">
+                    <img src="" alt="Project cover">
+                    <div class="catalog-card-info">
+                        <p>Alternative pop</p>
+                        <h3>BODHIRIA</h3>
+                        <span>Judeline</span>
+                    </div>
+                    <div class="catalog-card-meta">
+                        <span>Popularity 81</span>
+                        <span>On tour</span>
+                    </div>
+                </article> -->
+
+                </div>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Music Archive © 2026
+    </footer>
+    <script src="datos.js"></script>
+    <script src="ontour.js"></script>
+    <script src="codigoCatalogo.js"></script>
+    <!--  <script src="codigoIndex.js"></script> -->
+
+</body>
+
+</html>
